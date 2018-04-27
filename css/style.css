@@ -133,7 +133,8 @@ nav.nav-center ul
 
 #art
 {
-    min-height:100vh;
+
+    height:auto;
     background: url("../img/bg-tile.png");
     z-index: 1;
 }
@@ -170,7 +171,7 @@ nav.nav-center ul
 {
 
 
-  width:75%;
+  width:100%;
 }
 
 form .input-field
@@ -263,7 +264,8 @@ form .input-field
 
   .container-width
   {
-    min-width:100%;
+    /* min-width:100%; */
+    width:100%;
   }
 
   .centered
@@ -353,8 +355,8 @@ form .input-field
 {
   min-height:150px;
   max-height:150px;
-  min-width:290px;
-  max-width:290px;
+  /*min-width:290px;
+  max-width:290px; */
 
   height: 150px;
   width:290px;
