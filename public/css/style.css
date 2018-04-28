@@ -86,6 +86,13 @@ nav.nav-center ul
   min-height:75vh;
 }
 
+.skill-title
+{
+  position: absolute;
+  left:20px;
+  top:250px;
+}
+
 .skill-container
 {
   width:150px;
