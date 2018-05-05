@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/circle.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,18 +17,19 @@
 
   <nav class="transparent z-depth-0">
     <div class="nav-wrapper ">
-
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Sample Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#samples">Sample Work</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Fullscreen background image -->
-  <div class="wrapper">
+  <div id="about" class="wrapper scrollspy">
 
     <div class="tranparent-cover"></div>
     <div id="main-container" class="container">
@@ -43,10 +45,29 @@
 
   </div>
 
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="./img/image-8.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="./img/matt.jpg"></a>
+        <a href="#name"><span class="white-text name">Mateuz Kuriata</span></a>
+        <a href="#email"><span class="white-text email">mateuszsuhy@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#about"><i class="material-icons">cloud</i>About</a></li>
+    <li><a href="#skills"><i class="material-icons">cloud</i>Skills</a></li>
+    <li><a href="#samples"><i class="material-icons">cloud</i>Sample Work</a></li>
+      <li><a href="#testimonials"><i class="material-icons">cloud</i>Testimonials</a></li>
+    <li><a href="#contact"><i class="material-icons">cloud</i>Contact</a></li>
+
+  </ul>
+  <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"></i></a> -->
 
 
   <!-- Section: intro -->
-  <section class="section section-icons center">
+  <section  class="section section-icons center ">
 
     <div class="container container-width">
 
@@ -60,9 +81,34 @@
             hic quae, dignissimos repellat, aperiam repellendus nihil delectus fugiat nam! Doloribus fuga quas, veniam ipsam nam sed quos. Animi iure soluta placeat, voluptas.</p>
           <br/>
         </div>
+        <div id="about-social-icons" class="row">
+          <div class="col s12 l3"></div>
+          <div class="col s12 m12 l9">
+            <div class="row">
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social blue darken-4 facebook">
+                  <i class="fa fa-facebook"></i></a>
+              </div>
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social blue twitter">
+                  <i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social red lighten-1 twitter">
+                  <i class="fa fa-google"></i></a>
+              </div>
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social purple lighten-2">
+                  <i class="fa fa-instagram"></i></a>
+              </div>
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large red darken-3 social ">
+                  <i class="fa fa-pinterest"></i></a>
+              </div>
+              <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social grey reddit">
+                  <i class="fa fa-reddit"></i></a>
+              </div>
 
-        <div class="col s2"></div>
-      </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer-10"></div>
 
   </section>
 
@@ -83,13 +129,13 @@
   </section>
 
   <!-- skills -->
-  <section id="skills" class="section section-icons center">
+  <section id="skills" class="section section-icons scrollspy center">
 
     <div class="spacer-5"></div>
     <div class="container">
       <h3 class="center-align sub-header-text-2 white-text">Skills</h3>
       <div class="spacer-5"></div>
-      <div class="row center-align">
+      <div id="skills-container" class="row center-align">
 
         <div class="col m6 offset-m3 s12 l3">
           <div class="card-panel z-depth-0 center-align">
@@ -99,12 +145,12 @@
                 <div class="bar"></div>
                 <div class="fill"></div>
               </div>
-                <div class="skill-title">
+              <div class="skill-title">
                 <h5>Painting & Sculpting</h5>
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
 
         <div class="col m6 offset-m3 s12 l3">
@@ -117,8 +163,8 @@
               </div>
               <div class="skill-title">
                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3d Modeling</h5>
+              </div>
             </div>
-          </div>
           </div>
         </div>
 
@@ -133,7 +179,7 @@
               </div>
               <div class="skill-title">
                 <h5>&nbsp;&nbsp;Skinning & Rigging</h5>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -149,7 +195,7 @@
               </div>
               <div class="skill-title">
                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animation</h5>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -193,11 +239,11 @@
       </div> -->
 
 
-  <section id="pre-modelling" class="section">
+  <section id="samples" class="section gradient shadow scrollspy">
 
     <div class="container container-width">
       <div class="row">
-        <div class="col s12 m12 l12 z-depth-0">
+        <div class="col s12 m12 l12">
           <h3 class="center-align sub-header-text-2 black-text">Samples of my work</h3>
         </div>
       </div>
@@ -211,7 +257,7 @@
     <div class="spacer-5"></div>
     <h3 class="center-align sub-header-text-2 white-text">3d modelling</h3>
     <div class="spacer-5"></div>
-    <div class="container">
+    <div id="gallery-container" class="container">
 
 
       <div class="row">
@@ -263,30 +309,34 @@
 
   </section>
 
-
-  <section id="pre-modelling" class="section shadow">
+  <section class="section gradient shadow">
 
     <div class="container container-width">
-
-      <h3 class="center-align sub-header-text-2 black-text">Testimonials</h3>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h3 class="center-align sub-header-text-2 black-text">Testimonials</h3>
+        </div>
+      </div>
 
     </div>
 
   </section>
 
-  <section id="testimonials" class="section timeline">
+  <section id="testimonials" class="section timeline scrollspy">
 
     <!-- Time Line  -->
     <ul>
       <li>
         <div class="z-depth-2">
-          <time>1937</time> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quia doloremque, aut et vel ex quaerat. Facere, iste maxime qui aspernatur blanditiis, placeat ipsum accusamus quam perferendis fuga deserunt aliquam dolore, dolor quo ex similique ut culpa quae corrupti natus omnis sit enim. Possimus, aliquam sunt est repudiandae odit, natus.
+          <time>1937</time> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quia doloremque, aut et vel ex quaerat. Facere, iste maxime qui aspernatur blanditiis, placeat ipsum accusamus quam perferendis fuga deserunt aliquam dolore, dolor
+          quo ex similique ut culpa quae corrupti natus omnis sit enim. Possimus, aliquam sunt est repudiandae odit, natus.
 
         </div>
       </li>
       <li>
         <div class="z-depth-2">
-          <time>1937</time> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quia doloremque, aut et vel ex quaerat. Facere, iste maxime qui aspernatur blanditiis, placeat ipsum accusamus quam perferendis fuga deserunt aliquam dolore, dolor quo ex similique ut culpa quae corrupti natus omnis sit enim. Possimus, aliquam sunt est repudiandae odit, natus.
+          <time>1937</time> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quia doloremque, aut et vel ex quaerat. Facere, iste maxime qui aspernatur blanditiis, placeat ipsum accusamus quam perferendis fuga deserunt aliquam dolore, dolor
+          quo ex similique ut culpa quae corrupti natus omnis sit enim. Possimus, aliquam sunt est repudiandae odit, natus.
         </div>
       </li>
       <li>
@@ -344,14 +394,43 @@
   </section>
 
   <!--- Form and Location --->
-  <section id="contact" class="section">
+  <section id="contact" class="section scrollspy">
     <div class="container container-width">
 
       <div class="spacer-5"></div>
       <h3 class="center-align sub-header-text-2 white-text">Contact</h3>
       <div class="spacer-5"></div>
 
-      <div class="row contact-container center-align">
+      <div id="contact-social-icons" class="row center-align">
+
+        <div class="col s12 m12 offset-l4 l8">
+          <div class="row">
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social blue darken-4 facebook">
+                <i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social blue twitter">
+                <i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social red lighten-1 twitter">
+                <i class="fa fa-google"></i></a>
+            </div>
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social purple lighten-2">
+                <i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large red darken-3 social ">
+                <i class="fa fa-pinterest"></i></a>
+            </div>
+            <div class="col s4 m2 l1"><a class="waves-effect waves-light btn-floating btn-large social grey reddit">
+                <i class="fa fa-reddit"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-5"></div>
+
+      <div id="contact-form" class="row contact-container center-align">
         <form action="" class="col s12 m12 l5">
           <div class="row">
             <div class="input-field col s12  m12 l12">
@@ -386,7 +465,7 @@
 
         <div class="col s12 m12 l5">
 
-<!--
+          <!--
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6446140.387114222!2d-6.232197369701873!3d52.53203968118122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1524849500267"
             width="350" height="300" frameborder="0" style="border:1" allowfullscreen></iframe> -->
 
@@ -409,6 +488,14 @@
     const mb = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(mb, {});
 
+    //Scroll Spy
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.scrollspy');
+
+      var scrollSpyOptions = {};
+      var instances = M.ScrollSpy.init(elems, scrollSpyOptions);
+    });
+
     //Time Line script
 
     const testimonials = document.getElementById('testimonials');
@@ -430,63 +517,57 @@
 
 
 
-    function callbackFunction()
-    {
-      console.log( testimonials.offsetHeight + ' ' + testimonials.offsetWidth );
+    function callbackFunction() {
+      console.log(testimonials.offsetHeight + ' ' + testimonials.offsetWidth);
 
-      for(var i = 0; i < items.length; i++)
-      {
-        if(isElementInViewport(items[i]))
-        {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
           items[i].classList.add("in-view");
         }
       }
     }
 
-    function loadTimeLine()
-    {
+    function loadTimeLine() {
 
-      for(var i = 0; i < 3; i++)
-      {
+      for (var i = 0; i < 3; i++) {
         items[i].classList.add("in-view");
       }
     }
 
-    function showNavbar()
-    {
+
+
+    function showNavbar() {
 
       const scrollDistance = 400;
       console.log('Show nav bar called...');
       var nav = document.querySelector('nav');
+      var navMobile = document.getElementById('nav-mobile');
 
-      if(nav === 'undefined')
-      {
+
+      if (nav === 'undefined') {
         alert('shite');
-      }
-      else {
+      } else {
 
-          console.log(window.scrollY);
+        console.log(window.scrollY);
       }
 
-      if( window.scrollY >= scrollDistance )
-      {
+      if (window.scrollY >= scrollDistance) {
         nav.classList.remove('transparent');
-      }
-      else if( window.scrollY < scrollDistance ) {
+        navMobile.style.opacity = "1";
+      } else if (window.scrollY < scrollDistance) {
         nav.classList.add('transparent');
       }
     }
 
 
 
-    if(testimonials != 'undefined')
-    {
-      testimonials.addEventListener("scroll",function(){
+    if (testimonials != 'undefined') {
+      testimonials.addEventListener("scroll", function() {
         callbackFunction();
       });
     }
 
-    window.addEventListener("load", function(){
+    window.addEventListener("load", function() {
 
       loadTimeLine();
 
@@ -495,7 +576,11 @@
 
     window.addEventListener("scroll", showNavbar);
 
-
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var options = {};
+      var instances = M.Sidenav.init(elems, options);
+    });
   </script>
 </body>
 
